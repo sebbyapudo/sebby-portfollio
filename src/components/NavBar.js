@@ -2,6 +2,9 @@ import Link from 'next/link'
 import React from 'react'
 import Logo from './Logo'
 import { useRouter } from 'next/router'
+import  { TwitterIcon, GithubIcon, LinkedInIcon, PinterestIcon, DribbbleIcon } from './Icons'
+import { motion } from 'framer-motion'
+
 
 
 const CustomLink = ({href, title, className=""}) => {
@@ -13,9 +16,11 @@ const CustomLink = ({href, title, className=""}) => {
     <Link href={href} className={`${className} relative group`}>
       {title}
 
-      <span className='h-[1px] inline-block w-0 bg-dark absolute left-0 -bottom-0.5
+      <span className={`
+      h-[1px] inline-block w-0 bg-dark absolute left-0 -bottom-0.5
       group-hover:w-full transition-[width] ease duration-300
-      '>&nbsp;</span>
+      ${`router.asPath === ? 'w-full' : 'w-0'`}
+      `}>&nbsp;</span>
     </Link>
   )
 }
@@ -29,12 +34,42 @@ const NavBar = () => {
         <CustomLink href="/projects" title="Projects" className='ml-4'/>
       </nav>
 
-      <nav>
-        <Link href="/" target={'_blank'}>Twitter</Link>
-        <Link href="/" target={'_blank'}>Twitter</Link>
-        <Link href="/" target={'_blank'}>Twitter</Link>
-        <Link href="/" target={'_blank'}>Twitter</Link>
-        <Link href="/" target={'_blank'}>Twitter</Link>
+      <nav className='flex items-center justify-center flex-wrap'>
+        <motion.a href="https://twitter.com/ApudoSebby" target={'_blank'}
+        whileHover={{y:-2}}
+        whileTap={{scale:0.9}}
+        className='w-6 mx-3'
+        >
+          <TwitterIcon/>
+        </motion.a>
+        <motion.a href="https://github.com/sebbyapudo" target={'_blank'}
+        whileHover={{y:-2}}
+        whileTap={{scale:0.9}}
+        className='w-6 mx-3'
+        >
+          <GithubIcon/>
+        </motion.a>
+        <motion.a href="https://www.linkedin.com/in/sebby-oluoch-48ba76218/" target={'_blank'}
+        whileHover={{y:-2}}
+        whileTap={{scale:0.9}}
+        className='w-6 mx-3'
+        >
+          <LinkedInIcon />
+        </motion.a>
+        <motion.a href="https://www.pinterest.com/sebbyapudo/" target={'_blank'}
+        whileHover={{y:-2}}
+        whileTap={{scale:0.9}}
+        className='w-6 mx-3'
+        >
+          <PinterestIcon />
+        </motion.a>
+        <motion.a href="https://dribbble.com/JustSebby" target={'_blank'}
+        whileHover={{y:-2}}
+        whileTap={{scale:0.9}}
+        className='w-6 ml-3'
+        >
+          <DribbbleIcon />
+        </motion.a>
       </nav>
 
       <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
