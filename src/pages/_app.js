@@ -1,4 +1,5 @@
 import Footer from '@/components/Footer';
+import HireMe from '@/components/HireMe';
 import NavBar from '@/components/NavBar';
 import '@/styles/globals.css'
 
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }) {
         <NavBar></NavBar>
         <Component {...pageProps} />
         <Footer/>
+        <HireMe/>
       </main>
     </>
   );
