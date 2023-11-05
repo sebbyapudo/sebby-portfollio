@@ -13,7 +13,7 @@ const articles = () => {
 
       <main>
         <Layout>
-          <AnimatedText text="Words can change the world! Fret not we'll be writing soon😉" className='mb-16'/>
+          <AnimatedText text="Words can change the world! Fret not we'll be writing soon😉" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
         </Layout>
         
       </main>
