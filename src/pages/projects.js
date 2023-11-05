@@ -12,6 +12,7 @@ import Logistics from '../../public/images/projects/logistics.jpg'
 import FoodStore from '../../public/images/projects/food-store.jpg'
 import Loruki from '../../public/images/projects/loruki.jpg'
 import { motion } from 'framer-motion';
+import TransitionEffect from '@/components/TransitionEffect'
 
 
 
@@ -86,6 +87,7 @@ const projects = () => {
         <title>Projects | my work</title>
         <meta name="web developer, 3D Animator, graphics designer" content="desc"/>
       </Head>
+      <TransitionEffect />
 
       <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
         <Layout className='pt-16'>

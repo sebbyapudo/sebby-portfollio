@@ -1,5 +1,6 @@
 import AnimatedText from '@/components/AnimatedText'
 import Layout from '@/components/Layout'
+import TransitionEffect from '@/components/TransitionEffect'
 import Head from 'next/head'
 import React from 'react'
 
@@ -10,6 +11,7 @@ const articles = () => {
         <title>Sebby | About</title>
         <meta name="web developer, 3D Animator, graphics designer" content="desc"/>
       </Head>
+      <TransitionEffect />
 
       <main>
         <Layout>

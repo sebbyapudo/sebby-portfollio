@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
+import TransitionEffect from '@/components/TransitionEffect'
 
 const AnimatedNumbers = ({value}) => {
   const ref = useRef(null);
@@ -43,6 +44,7 @@ const about = () => {
           <title>Sebby | About</title>
           <meta name="web developer, 3D Animator, graphics designer" content="desc"/>
         </Head>
+        <TransitionEffect />
         <main className='flex w-full flex-col items-center justify-center dark:text-light'>
           <Layout className='pt-16'>
             <AnimatedText text="Passion Fules Purpose!" className='mb-16 text-6xl lg:!text-5xl md:!text-4xl sm:!text-3xl sm:mb-8'/>
