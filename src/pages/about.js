@@ -6,7 +6,7 @@ import AboutPic from '../../public/images/profile/seb.jpg'
 import Image from 'next/image'
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/Skills'
-import Experience from '@/components/Experience'
+// import Experience from '@/components/Experience'
 import TransitionEffect from '@/components/TransitionEffect'
 
 const AnimatedNumbers = ({value}) => {
@@ -74,7 +74,7 @@ const about = () => {
               </div>
 
               <div className='col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
-                <div className='flex flex-col items-end justify-center xl:items-center '>
+                <div className='flex flex-col items-end justify-center xl:items-center'>
                   <span className='inline-block text-7xl font-bold md:text-xl sm:text-5xl xs:text-4xl'>
                     <AnimatedNumbers value={50}/> +
                   </span>
@@ -96,7 +96,7 @@ const about = () => {
             </div>
 
             <Skills />
-            <Experience />
+            {/* <Experience /> */}
           </Layout>
         </main>
     </>
