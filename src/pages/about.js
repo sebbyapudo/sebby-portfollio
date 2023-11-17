@@ -96,7 +96,6 @@ const about = () => {
             </div>
 
             <Skills />
-            {/* <Experience /> */}
           </Layout>
         </main>
     </>
